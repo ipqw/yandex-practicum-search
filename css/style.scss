@@ -1,0 +1,140 @@
+@import 'null.scss';
+body{
+    font-family: 'Yandex Sans Display';
+    font-weight: 400;
+}
+.search{
+    display: flex;
+    width: 100%;
+    top: 50px;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 770px;
+}
+header{
+    padding-top: 250px;
+    width: 100%;
+}
+.search{
+    align-items: center;
+    display: flex;
+    width: 770px;
+    justify-content: baseline;
+}
+.search__line{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border-left: #ffc93d solid 2px;
+    white-space: nowrap;
+    background-color: #ffc93d;
+    user-select: none;
+    width: 655px;
+}
+.search__input{
+    width: 565px;
+    height: 40px;
+    font-size: 18px;
+    margin: 1px;
+    padding: 11px;
+    line-height: 18px;
+    max-height: 18px;
+    border: none;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    &:focus{
+        outline:none
+    }
+    &::placeholder{
+        color: #9d9d9d;
+    }
+}
+.search__logo{
+    font-size: 29px;
+    font-weight: 800;  
+    margin-right: 20px;
+}
+.search__span{
+    color: #ff2c2b;
+}
+.search__a{
+    text-decoration: none;
+    color: #000610;
+    max-width: 88px;
+    padding: 14px 18px 14px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+}
+
+// error
+.error__a{
+    text-decoration: none;
+    color: #085eb4;
+}
+.error__h1{
+    font-weight: 500;
+    font-size: 24px;
+    padding-bottom: 18px;
+    padding-top: 32px;
+    font-weight: 500;
+}
+.error__p{
+    font-size: 12px;
+    padding-bottom: 42px;
+}
+// apps
+.right{
+    margin-left: 70px;
+}
+main{
+    margin: 0 auto;
+    width: 600px;
+    padding-left: 70px;
+}
+.apps{
+    display: flex;
+}
+.apps__li{
+    list-style-type: none;
+    display: flex;
+}
+.apps__ul{
+    padding-inline-start: 0;    
+}
+.apps__img{
+    width: 16px;
+    height: 16px;
+    padding-right: 10px;
+}
+.apps__p{
+    padding-top: 1px;
+    font-size: 12px;
+    margin-bottom: 14px;
+}
+.apps__a{
+    text-decoration: none;
+    color: #295ec2;
+}
+.footer{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 25px;
+    z-index: -5;
+}
+.footer__text{
+    margin-right: 19px;
+    color: #a9a9a6;
+    font-size: 9px;
+    cursor: pointer;
+    user-select: none;
+    &:hover{
+        color: #919191;
+    }
+    &:active{
+        color: #777777;
+    }
+}
